@@ -45,13 +45,13 @@ public class AboutActivity extends Activity {
 			final String zero = "       \n";
 			final String one = "\t\tHDUNav\n";
 			final String two = "\t\tVersion 1.0\n";
-			final String three = "\t\tÎâĞñ¶«:\n\t\t\t\t  http://tikiet.blog.163.com\n"
+			final String three = "\t\tå´æ—­ä¸œ:\n\t\t\t\t  http://tikiet.blog.163.com\n"
 					+ "\t\t\t\t  wuxd@me.com\n"
-					+ "\t\tÀîÎ°:\n\t\t\t\t  http://mindlee.net\n"
+					+ "\t\tæä¼Ÿ:\n\t\t\t\t  http://mindlee.net\n"
 					+ "\t\t\t\t  chinawelon@gmail.com\n";
 
 			final String four = "\n\t\t\tCrabium & Mabbage Workshop\n\t\t\t\t\t\tLiWei and WuXudong\n\t\t\t\t\t\t\t Copyleft 2011.";
-			word.append(zero);// µ÷ÕûÓÃ¿ÕĞĞ
+			word.append(zero);// è°ƒæ•´ç”¨ç©ºè¡Œ
 			start = 0;
 			end = zero.length();
 			word.setSpan(new AbsoluteSizeSpan(8), start, end,
@@ -108,13 +108,13 @@ public class AboutActivity extends Activity {
 			final String zero = "       \n";
 			final String one = "\tHDUNav\n";
 			final String two = "\tVersion 1.0\n";
-			final String three = "\tÎâĞñ¶«:\n\t\t\t  http://tikiet.blog.163.com\n"
+			final String three = "\tå´æ—­ä¸œ:\n\t\t\t  http://tikiet.blog.163.com\n"
 					+ "\t\t\t  wuxd@me.com\n"
-					+ "\tÀîÎ°:\n\t\t\t  http://mindlee.net\n"
+					+ "\tæä¼Ÿ:\n\t\t\t  http://mindlee.net\n"
 					+ "\t\t\t  chinawelon@gmail.com\n";
 
 			final String four = "\n\t\tCrabium & Mabbage Workshop\n\t\t\t\tLiWei and WuXudong\n\t\t\t\t\t Copyleft 2011.";
-			word.append(zero);// µ÷ÕûÓÃ¿ÕĞĞ
+			word.append(zero);// è°ƒæ•´ç”¨ç©ºè¡Œ
 			start = 0;
 			end = zero.length();
 			word.setSpan(new AbsoluteSizeSpan(4), start, end,
