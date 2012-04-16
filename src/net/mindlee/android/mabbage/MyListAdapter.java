@@ -25,7 +25,7 @@ public class MyListAdapter extends BaseAdapter{
 		this.arr = arr;
 		init();
 	}
-	// ³õÊ¼»¯ 
+	// åˆå§‹åŒ– 
 	private void init() {
 		mydata = new ArrayList<Map<String,Object>>();
 		for(int i = 0 ; i < count;i++) {
@@ -54,7 +54,7 @@ public class MyListAdapter extends BaseAdapter{
 	@Override
 	public View getView(int position, View convertView, ViewGroup parent) {
 		ViewHolder holder = null;
-		// convertView Îª null Ê± ³õÊ¼»¯ convertView
+		// convertView ä¸º null æ—¶ åˆå§‹åŒ– convertView
 		if(convertView == null){
 			holder = new ViewHolder();
 			convertView = mInflater.inflate(R.layout.dispatch_select_user_item, null);
