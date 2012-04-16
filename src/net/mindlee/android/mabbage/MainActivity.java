@@ -41,7 +41,7 @@ public class MainActivity extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.main);
 		
-		DisplayToast("Ò»ÇĞ¶¼ÊÇÎªÁËÑ§Ï°£¡");
+		DisplayToast("ä¸€åˆ‡éƒ½æ˜¯ä¸ºäº†å­¦ä¹ ï¼");
 
         HNData.Initiate(this);
         HNData.CheckXMLExistence();		
@@ -96,7 +96,7 @@ public class MainActivity extends Activity {
 		LivingQuartersAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);	
 		LivingQuartersSpinner = (Spinner) findViewById(R.id.living_quarters_spinner);
 		LivingQuartersSpinner.setAdapter(LivingQuartersAdapter); 
-		LivingQuartersSpinner.setPrompt("ÆğÊ¼µã");
+		LivingQuartersSpinner.setPrompt("èµ·å§‹ç‚¹");
 		LivingQuartersSpinner.setSelection(8);
 		
 		LivingQuartersSpinner.setOnItemSelectedListener(new Spinner.OnItemSelectedListener() {
@@ -118,7 +118,7 @@ public class MainActivity extends Activity {
 		TeachingAreaAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
 		TeachingAreaSpinner = (Spinner) findViewById(R.id.teaching_area_spinner);
 		TeachingAreaSpinner.setAdapter(TeachingAreaAdapter);
-		TeachingAreaSpinner.setPrompt("Ä¿µÄµØ");
+		TeachingAreaSpinner.setPrompt("ç›®çš„åœ°");
 		TeachingAreaSpinner.setSelection(21);
 		
 		TeachingAreaSpinner.setOnItemSelectedListener(new Spinner.OnItemSelectedListener() {
@@ -137,7 +137,7 @@ public class MainActivity extends Activity {
 		ShortestPathGenerateButton.setOnClickListener(new Button.OnClickListener() {
 			@Override
 			public void onClick(View v) {
-				CreatGraph();//½¨Í¼
+				CreatGraph();//å»ºå›¾
 				Intent intent = new Intent(MainActivity.this, ShortestPathOutputActivity.class);
 				startActivity(intent);
 				MainActivity.this.finish();
@@ -165,7 +165,7 @@ public class MainActivity extends Activity {
 		
 		for(Map<Integer, Integer> map : CampusDistanceHashMap.keySet()){
 			for(Integer key : map.keySet()){
-				Log.v("½ÌÑ§Çøkey = " + key  + "   map.get(key) = " + map.get(key) , "¾àÀë" + CampusDistanceHashMap.get(map));
+				Log.v("æ•™å­¦åŒºkey = " + key  + "   map.get(key) = " + map.get(key) , "è·ç¦»" + CampusDistanceHashMap.get(map));
 				G.insert(key, map.get(key), CampusDistanceHashMap.get(map));
 				
 			}
@@ -173,7 +173,7 @@ public class MainActivity extends Activity {
 		
 		for(Map<Integer, Integer> map : LivingDistanceHashMap.keySet()){
 			for(Integer key : map.keySet()){
-				Log.v("Éú»îÇøkey = " + (key + 100)  + "   map.get(key) = " + (map.get(key) + 100) , "¾àÀë" + LivingDistanceHashMap.get(map));
+				Log.v("ç”Ÿæ´»åŒºkey = " + (key + 100)  + "   map.get(key) = " + (map.get(key) + 100) , "è·ç¦»" + LivingDistanceHashMap.get(map));
 					int _key, _map;
 					_key = key;
 					
