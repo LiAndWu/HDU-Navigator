@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lint>
+    <issue id="DisableBaselineAlignment">
+        <ignore path="res\layout-hdpi\dispatch_select_user_item.xml" />
+        <ignore path="res\layout-mdpi\dispatch_select_user_item.xml" />
+    </issue>
+    <issue id="HardcodedText">
+        <ignore path="res\layout-hdpi\about.xml" />
+        <ignore path="res\layout-hdpi\dispatch_select_user_item.xml" />
+        <ignore path="res\layout-hdpi\main.xml" />
+        <ignore path="res\layout-hdpi\shortest_path_output.xml" />
+        <ignore path="res\layout-mdpi\about.xml" />
+        <ignore path="res\layout-mdpi\dispatch_select_user_item.xml" />
+        <ignore path="res\layout-mdpi\main.xml" />
+        <ignore path="res\layout-mdpi\shortest_path_output.xml" />
+    </issue>
+    <issue id="InefficientWeight">
+        <ignore path="res\layout-hdpi\about.xml" />
+        <ignore path="res\layout-hdpi\dispatch_select_user_item.xml" />
+        <ignore path="res\layout-mdpi\about.xml" />
+        <ignore path="res\layout-mdpi\dispatch_select_user_item.xml" />
+    </issue>
+    <issue id="NestedWeights">
+        <ignore path="res\layout-hdpi\dispatch_select_user_item.xml" />
+        <ignore path="res\layout-mdpi\dispatch_select_user_item.xml" />
+    </issue>
+    <issue id="UselessParent">
+        <ignore path="res\layout-hdpi\dispatch_select_user_item.xml" />
+        <ignore path="res\layout-mdpi\dispatch_select_user_item.xml" />
+    </issue>
+</lint>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="match_parent"
+	android:layout_height="match_parent">
+	<LinearLayout android:background="@drawable/bar"
+		android:weightSum="1" android:baselineAligned="false"
+		android:layout_width="fill_parent" android:id="@+id/barLinearLayout"
+		android:layout_height="45dp">
+
+		<Button
+		    android:id="@+id/back_button"
+		    android:layout_width="82dip"
+		    android:layout_height="41dip"
+		    android:layout_gravity="center_vertical"
+		    android:layout_margin="2dip"
+		    android:layout_weight="0.06"
+		    android:text="上一步"
+		    android:textStyle="bold" >
+
+		</Button>
+
+		<TextView android:gravity="center" android:text="关于"
+			android:textAppearance="?android:attr/textAppearanceMedium"
+			android:layout_height="fill_parent" android:textStyle="bold"
+			android:textSize="24dip" android:layout_width="wrap_content"
+			android:id="@+id/neverCallTextView" android:layout_weight="0.55">
+		</TextView>
+	</LinearLayout>
+
+	<LinearLayout android:id="@+id/linearLayout1"
+		android:layout_width="match_parent" android:orientation="vertical"
+		android:weightSum="1" android:layout_height="match_parent"
+		android:layout_marginLeft="8dip" android:layout_marginRight="8dip"
+		android:layout_marginTop="10dip" android:layout_marginBottom="10dip">
+		<TextView android:scrollbarAlwaysDrawVerticalTrack="true"
+			android:lineSpacingExtra="4dip" android:text="嗨，这是关于"
+			android:scrollbars="vertical" android:textAppearance="?android:attr/textAppearanceLarge"
+			android:layout_gravity="center_vertical|center_horizontal|center"
+			android:layout_width="272dp" android:layout_marginTop="30dip"
+			android:layout_weight="0.56" android:id="@+id/about_textView" android:textSize="20dip" android:layout_height="315dip"></TextView>
+	</LinearLayout>
+
+</LinearLayout>

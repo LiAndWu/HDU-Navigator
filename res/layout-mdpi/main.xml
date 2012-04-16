@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+	<Spinner android:layout_width="match_parent"
+		android:layout_height="wrap_content" android:layout_marginLeft="5dip"
+		android:layout_marginRight="5dip" android:layout_marginTop="10dip"
+		android:layout_marginBottom="3dip" android:id="@+id/living_quarters_spinner">
+	</Spinner>
+
+	<Spinner android:layout_width="match_parent"
+		android:layout_height="wrap_content" android:layout_marginLeft="5dip"
+		android:layout_marginRight="5dip" android:layout_marginBottom="3dip"
+		android:id="@+id/teaching_area_spinner">
+	</Spinner>
+	<Button android:text="最短路" android:layout_height="wrap_content"
+		android:layout_width="match_parent" android:textSize="18dip"
+		android:textStyle="bold" android:id="@+id/shortest_path_generate_button"
+		android:layout_marginLeft="5dip" android:layout_marginRight="5dip"
+		android:layout_marginBottom="3dip">
+	</Button>
+
+	<Button android:layout_height="wrap_content"
+		android:layout_width="match_parent" android:id="@+id/about_button"
+		android:layout_marginRight="5dip" android:layout_marginLeft="5dip"
+		android:textStyle="bold" android:textSize="18dip" android:text="关于">
+	</Button>
+</LinearLayout>
