@@ -54,14 +54,14 @@ public class ShortestPathOutputActivity extends Activity {
 		getWindowManager().getDefaultDisplay().getMetrics(dm);
 		if (dm.heightPixels > 600) {
 		value.add(new String[] { des < MainActivity.Offset ? MainActivity.CampusNameHashMap
-				.get(des) : MainActivity.LivingNameHashMap.get(des - MainActivity.Offset) , "" + MainActivity.Distance  + "\t\t\tÃ×"});  
+				.get(des) : MainActivity.LivingNameHashMap.get(des - MainActivity.Offset) , "" + MainActivity.Distance  + "\t\t\tç±³"});  
 		} else {
 			value.add(new String[] { des < MainActivity.Offset ? MainActivity.CampusNameHashMap
-					.get(des) : MainActivity.LivingNameHashMap.get(des - MainActivity.Offset) , "" + MainActivity.Distance  + "\t\tÃ×"});  
+					.get(des) : MainActivity.LivingNameHashMap.get(des - MainActivity.Offset) , "" + MainActivity.Distance  + "\t\tç±³"});  
 		}
 		while (MainActivity.Distance < ShortestPathRoad) {
 			MainActivity.Distance += (MainActivity.G.dis[des] - MainActivity.G.dis[src]);
-			String Suffix = MainActivity.Distance < 1000 ? "\tÃ×" : "Ã×";
+			String Suffix = MainActivity.Distance < 1000 ? "\tç±³" : "ç±³";
 			value.add(new String[] { src < MainActivity.Offset ? MainActivity.CampusNameHashMap
 					.get(src) : MainActivity.LivingNameHashMap.get(src - MainActivity.Offset) , "" + MainActivity.Distance + Suffix});
 			src = MainActivity.G.pre[src];
